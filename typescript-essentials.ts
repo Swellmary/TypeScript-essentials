@@ -8,6 +8,9 @@ interface UserInterface {
 const User: UserInterface = { // user: UserInterface - this is how we add object blueprint to our object.
     id: 2,
     name: "Alice", 
+    greet(message {
+        console.log("Hello");
+    })
 }
 
 if (!User.age) {
