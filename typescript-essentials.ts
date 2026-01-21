@@ -7,9 +7,9 @@
 // let xArr: any[] = [1, true, "hello"];
 
 
-const concatenateValues = (a, b) => {
+const concatenateValues = (a: string, b: string) => {
     return a + b;
 }
 
 console.log(concatenateValues("Hello, ", "world!")); // Output: Hello, world!
-console.log(concatenateValues(5, 10)); // Output: 15
+console.log(concatenateValues("5", "10")); // Output: 510
