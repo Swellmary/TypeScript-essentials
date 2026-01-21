@@ -1,4 +1,7 @@
-const printID = (id: number | string | boolean | number[]) => {
+
+type IDFieldType = string | number;
+
+const printID = (id: IDFieldType) => {
     console.log("ID: " + id);
 }
 
