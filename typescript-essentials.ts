@@ -1,4 +1,4 @@
-const printID = (id: number | string) => {
+const printID = (id: number | string | boolean | number[]) => {
     console.log("ID: " + id);
 }
 
