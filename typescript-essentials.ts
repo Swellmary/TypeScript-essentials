@@ -7,7 +7,7 @@
 // let xArr: any[] = [1, true, "hello"];
 
 
-const concatenateValues = (a: string, b: string) => {
+const concatenateValues = (a: string, b: string): string => {
     return a + b;
 }
 
