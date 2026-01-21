@@ -25,3 +25,5 @@ type Employee = BusinessPartner & UserIdentity
 const signContract = (employee: Employee): void => {
     console.log("Contract signed by: " + employee.name + "With email: " + employee.email)
 }
+
+signContract({name: "Well Mary", creditScore: 800, id:53, email: "suarezwellmary@gmail.co"})
