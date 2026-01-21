@@ -4,5 +4,10 @@ const User = {
     id: 2,
     name: "Alice",
 };
-console.log(User);
+if (!User.age) {
+    console.log("No age provided");
+}
+else {
+    console.log(`User age is ${User.age}`);
+}
 //# sourceMappingURL=typescript-essentials.js.map
