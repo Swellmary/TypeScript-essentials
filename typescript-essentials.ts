@@ -19,3 +19,6 @@ interface UserIdentity {
     id: number;
     email: string;
 }
+
+type Employee = BusinessPartner & UserIdentity
+
