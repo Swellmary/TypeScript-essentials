@@ -22,3 +22,6 @@ interface UserIdentity {
 
 type Employee = BusinessPartner & UserIdentity
 
+const signContract = (employee: Employee): void => {
+    console.log("Contract signed by: " + employee.name + "With email: " + employee.email)
+}
