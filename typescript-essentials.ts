@@ -1,17 +1,10 @@
-
-interface UserInterface {
-    id: number;
-    name: string;
-    age?: number; // optional property is either a number or undefined.
-    greet(message: string): void;
+const printID = (id: number) => {
+    console.log("ID: " + id);
 }
 
-const User: UserInterface = { // user: UserInterface - this is how we add object blueprint to our object.
-    id: 2,
-    name: "Alice", 
-    greet(message) {
-        console.log(message);
-    }
-}
+console.log(printID);
 
-User.greet("Hello, Alice!"); 
+const printIDNow = printID(2323);
+console.log(printID(12345));
+
+printID(234234);
