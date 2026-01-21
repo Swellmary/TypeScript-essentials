@@ -1,5 +1,5 @@
 
-interface UserInterface { // Capital letter on object name first
+interface userInterface { // Capital letter is actually bad practice for interface names.
     id: number;
     name: string;
     age?: number;
