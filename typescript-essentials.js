@@ -16,6 +16,10 @@ const usernames = new StorageContainer(); //when declares T we define the type o
 usernames.addItem("Well Mary");
 usernames.addItem("Ethan");
 console.log(usernames.getItem(0));
+const friendsCount = new StorageContainer(); //when declares T we define the type of specific arguments
+friendsCount.addItem(10);
+friendsCount.addItem(30);
+console.log(friendsCount.getItem(0));
 /*
 >>>> REVERT <<<<<
 
