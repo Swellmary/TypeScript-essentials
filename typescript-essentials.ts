@@ -7,8 +7,8 @@ class StorageContainer<T> { // <T> declaration for a type that can be use along 
         this.contents = [];
     }
 
-    addItem(item: T): void {
-        this.contents.push(item);
+    addItem(item: T) {
+        return this.contents.push(item);
     }
 
     getItem(idx: number): T | undefined {
@@ -16,9 +16,10 @@ class StorageContainer<T> { // <T> declaration for a type that can be use along 
     }
 }
 
-const usernames = new StorageContainer<string>() //when declares T we define the type of specific arguments
+const usernames = new StorageContainer<string>(); //when declares T we define the type of specific arguments
 usernames.addItem("Well Mary");
 usernames.addItem("Ethan");
+console.log(usernames.getItem(0));
 
 
 /*
@@ -79,6 +80,4 @@ signContract({name: "Well Mary", creditScore: 800, id:53, email: "suarezwellmary
 //     }
 // }
 
-// User.greet("Hello, Alice!"); 
->>>>>>> parent of 3b0a41d (add modern function with typescript and display differently)
->>>>>>> parent of 29c0974 (add enum: define error keys)
+// User.greet("Hello, Alice!");
