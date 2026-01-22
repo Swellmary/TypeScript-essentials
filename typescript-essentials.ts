@@ -1,7 +1,7 @@
 
 
 class StorageContainer<T> { // <T> declaration for a type that can be use along the way/initial to any types (generic) - placeholder to a type
-    contents 
+    contents: T[] // means array of this T type
 
 }
 
