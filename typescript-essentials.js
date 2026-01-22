@@ -16,15 +16,11 @@ class StorageContainer {
 const usernames = new StorageContainer(); //when declares T we define the type of specific arguments
 usernames.addItem("Well Mary");
 usernames.addItem("Ethan");
-const employee = {
-    employeeId: 123,
-    startDate: new Date(),
-    name: "Well Mary",
-    department: "finance"
-};
-employee.name = "Pedro";
-employee.employeeId = 777;
-console.log(employee);
+console.log(usernames.getItem(0));
+const friendsCount = new StorageContainer(); //when declares T we define the type of specific arguments
+friendsCount.addItem(10);
+friendsCount.addItem(30);
+console.log(friendsCount.getItem(0));
 /*
 >>>> REVERT <<<<<
 
