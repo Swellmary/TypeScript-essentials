@@ -1,10 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const printID = (id) => {
-    console.log("ID: " + id);
+const User = {
+    id: 2,
+    name: "Alice",
 };
-console.log(printID);
-const printIDNow = printID(2323);
-console.log(printID(12345));
-printID(234234);
+if (!User.age) {
+    console.log("No age provided");
+}
+else {
+    console.log(`User age is ${User.age}`);
+}
 //# sourceMappingURL=typescript-essentials.js.map

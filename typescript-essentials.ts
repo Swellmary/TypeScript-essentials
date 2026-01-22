@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // type IDFieldType = string | number;
 
 // const printID = (id: IDFieldType) => {
@@ -27,3 +28,21 @@ const signContract = (employee: Employee): void => {
 }
 
 signContract({name: "Well Mary", creditScore: 800, id:53, email: "suarezwellmary@gmail.co"})
+=======
+// interface UserInterface {
+//     id: number;
+//     name: string;
+//     age?: number; // optional property is either a number or undefined.
+//     greet(message: string): void;
+// }
+
+// const User: UserInterface = { // user: UserInterface - this is how we add object blueprint to our object.
+//     id: 2,
+//     name: "Alice", 
+//     greet(message) {
+//         console.log(message);
+//     }
+// }
+
+// User.greet("Hello, Alice!"); 
+>>>>>>> parent of 3b0a41d (add modern function with typescript and display differently)
