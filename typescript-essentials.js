@@ -1,6 +1,21 @@
 "use strict";
-// MINOR LEFT TO LEARN
 Object.defineProperty(exports, "__esModule", { value: true });
+// MINOR LEFT TO LEARN
+class StorageContainer {
+    contents; // means array of this T types
+    constructor() {
+        this.contents = [];
+    }
+    addItem(item) {
+        this.contents.push(item);
+    }
+    getItem(idx) {
+        return this.contents[idx];
+    }
+}
+const usernames = new StorageContainer(); //when declares T we define the type of specific arguments
+usernames.addItem("Well Mary");
+usernames.addItem("Ethan");
 const employee = {
     employeeId: 123,
     startDate: new Date(),
@@ -66,5 +81,5 @@ signContract({name: "Well Mary", creditScore: 800, id:53, email: "suarezwellmary
 //         console.log(message);
 //     }
 // }
-// User.greet("Hello, Alice!");
+// User.greet("Hello, Alice!"); 
 //# sourceMappingURL=typescript-essentials.js.map

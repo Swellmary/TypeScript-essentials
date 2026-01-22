@@ -1,5 +1,28 @@
 // MINOR LEFT TO LEARN
+class StorageContainer<T> { // <T> declaration for a type that can be use along the way/initial to any types (generic) - placeholder to a type
+    private contents: T[] // means array of this T types
 
+    constructor() {
+        this.contents = [];
+    }
+
+    addItem(item: T): void {
+        this.contents.push(item);
+    }
+
+    getItem(idx: number): T | undefined {
+        return this.contents[idx]
+    }
+}
+
+const usernames = new StorageContainer<string>() //when declares T we define the type of specific arguments
+usernames.addItem("Well Mary");
+usernames.addItem("Ethan");
+
+
+
+//-------------------------------------------------------
+//-------------------------------------------------------
 interface Employee {
     readonly employeeId: number;
     readonly startDate: Date;
@@ -77,4 +100,4 @@ signContract({name: "Well Mary", creditScore: 800, id:53, email: "suarezwellmary
 //     }
 // }
 
-// User.greet("Hello, Alice!");
+// User.greet("Hello, Alice!"); 
