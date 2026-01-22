@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+/*
+>>>> REVERT <<<<<
+
 // unauthorized, user doesn't exist, wrong credentials, internal
 
 enum LoginError {
@@ -21,3 +31,5 @@ const printErrorMsg = (error: LoginError) => {
 }
 
 printErrorMsg(LoginError.Unauthorized);
+
+*/
