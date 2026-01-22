@@ -16,6 +16,10 @@ class StorageContainer<T> { // <T> declaration for a type that can be use along 
     }
 }
 
+const usernames = new StorageContainer<string>() //when declares T we define the type of specific arguments
+usernames.addItem("Well Mary");
+usernames.addItem("Ethan");
+
 
 /*
 >>>> REVERT <<<<<
