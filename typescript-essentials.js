@@ -1,25 +1,15 @@
 "use strict";
+// MINOR LEFT TO LEARN
 Object.defineProperty(exports, "__esModule", { value: true });
-class StorageContainer {
-    contents; // means array of this T types
-    constructor() {
-        this.contents = [];
-    }
-    addItem(item) {
-        return this.contents.push(item);
-    }
-    getItem(idx) {
-        return this.contents[idx];
-    }
-}
-const usernames = new StorageContainer(); //when declares T we define the type of specific arguments
-usernames.addItem("Well Mary");
-usernames.addItem("Ethan");
-console.log(usernames.getItem(0));
-const friendsCount = new StorageContainer(); //when declares T we define the type of specific arguments
-friendsCount.addItem(10);
-friendsCount.addItem(30);
-console.log(friendsCount.getItem(0));
+const employee = {
+    employeeId: 123,
+    startDate: new Date(),
+    name: "Well Mary",
+    department: "finance"
+};
+employee.name = "Pedro";
+employee.employeeId = 777;
+console.log(employee);
 /*
 >>>> REVERT <<<<<
 

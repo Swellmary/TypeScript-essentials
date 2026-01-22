@@ -1,31 +1,24 @@
+// MINOR LEFT TO LEARN
 
+interface Employee {
+    readonly employeeId: number;
+    readonly startDate: Date;
 
-class StorageContainer<T> { // <T> declaration for a type that can be use along the way/initial to any types (generic) - placeholder to a type
-    private contents: T[] // means array of this T types
-
-    constructor() {
-        this.contents = [];
-    }
-
-    addItem(item: T) {
-        return this.contents.push(item);
-    }
-
-    getItem(idx: number): T | undefined {
-        return this.contents[idx]
-    }
+    name: string;
+    department: string;
 }
 
-const usernames = new StorageContainer<string>(); //when declares T we define the type of specific arguments
-usernames.addItem("Well Mary");
-usernames.addItem("Ethan");
-console.log(usernames.getItem(0));
+const employee: Employee = {
+    employeeId: 123,
+    startDate: new Date(),
+    name: "Well Mary",
+    department: "finance"
+}
 
-const friendsCount = new StorageContainer<number>(); //when declares T we define the type of specific arguments
-friendsCount.addItem(10);
-friendsCount.addItem(30);
-console.log(friendsCount.getItem(0));
+employee.name = "Pedro";
+employee.employeeId = 777;
 
+console.log(employee);
 /*
 >>>> REVERT <<<<<
 
